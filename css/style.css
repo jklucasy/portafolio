@@ -1,14 +1,33 @@
 body{
-    background: rgb(76, 83, 83);
+    height: 100%;
 }
-.grid.container,
-.grid.row{
+.fondo{
+    width: 100%;
+    flex-wrap: nowrap;
+}
+.fondo-i{
+    width: 50%;
     height: 100vh;
 }
-.grid.col-6:first-child{
+a.text-secondary:focus, a.text-secondary:hover{
+    color: #0092be!important;
+}
+.grid.container{
+    height: 80vh;
+}
+.grid.row{
+    height: 80vh;
+}
+/* .grid.col-6:first-child{
     padding: 6rem;
+} */
+.grid.col-6{
+    height: 75vh;
+    align-items: center!important;
+    justify-content: end;
 }
 .grid.btn{
+    font-size: 1.5rem;
     padding: .6rem 1.6rem;
     border-radius: .8rem;
 }
@@ -24,11 +43,10 @@ body{
 }
 .grid.title{
     color: #8000b3;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     text-align: center;
 }
 .grid.paragraph{
     padding-bottom: 3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    text-justify: auto;
 }

@@ -6,6 +6,7 @@
     <title>Portafolio</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/izmir.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -15,21 +16,48 @@
     </div>
     
     <nav class="main navbar bg-transparent border-bottom">
-        <a class="main navbar-brand" href="./index.html"><img class="align-items-center" src="./img/nav.png" alt="home"></a>
+        <a class="main navbar-brand disabled" href="./index.html"><img class="align-items-center" src="./img/nav.png" alt="home"></a>
         <ul class="main nav">
             <li class="main nav-item"><a href="./skills.html" class="main nav-link text-secondary font-weight-bold h2">SKILLS</a></li>
-            <li class="main nav-item"><a href="" class="main nav-link text-secondary font-weight-bold h2">PROJECTS</a></li>
+            <li class="main nav-item"><a href="./projects.html" class="main nav-link active text-secondary font-weight-bold h2">PROJECTS</a></li>
             <li class="main nav-item"><a href="" class="main nav-link text-secondary font-weight-bold h2">CONTACT</a></li>
         </ul>
     </nav>
 
-    <div class="grid container">
-        <div class="grid row offset-1 align-items-center">
-            <div class="grid col-4">
+    <div class="pro grid container">
+        <div class="pro grid row offset-1 align-items-center">
+            <div class="pro col-5">
+                <figure class="c4-izmir c4-border-ccc-3 c4-image-blur c4-gradient-top-left" style="--primary-color: #000046; --secondary-color: #1CB5E0;">
+                    <img class="pro img-fluid" src="./img/holidays-calendar.png" alt="">
+                    <figcaption class="">
+                        <a class="btn btn-primary c4-reveal-down" href="">PREVIEW</a>
+                    </figcaption>
+                </figure>
             </div>
-            <div class="grid offset-1 col-6">
-                <h1 class="grid title font-weight-bold display-4 animate__animated animate__fadeInLeft" >SKILLS</h1>
-                <p class="grid paragraph animate__animated animate__fadeInLeft" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia delectus, et odio quos officiis dicta ipsam sed qui odit, natus illum, rerum ratione Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio tempore alia voluptates minima magnam consequuntur incidunt deserunt excepturi.</p>
+            <div class="pro col-6">
+                <h1 class="grid title font-weight-bold display-4 animate__animated animate__fadeInLeft" >PROJECTS</h1>
+                <h2 class="pro-calendar animate__animated animate__fadeInLeft" >Holiday Calendar</h2>
+                <div class="pro-calendar container">
+                    <div class="row">
+                        <div class="skills col-3">
+                            <img class="skills img-fluid" src="./img/html.png" alt="">
+                            <p class="pro-text">HTML</p>
+                        </div>
+                        <div class="skills col-3">
+                            <img class="skills img-fluid" src="./img/css.png" alt="">
+                            <p class="pro-text">CSS</p>
+                        </div>
+                        <div class="skills col-3">
+                            <img class="skills img-fluid" src="./img/js.png" alt="">
+                            <p class="pro-text">JAVASCRIPT</p>
+                        </div>
+                        <div class="skills col-3">
+                            <img class="skills img-fluid" src="./img/SASS.png" alt="">
+                            <p class="pro-text">SASS</p>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="pro-portfolio animate__animated animate__fadeInLeft" >Personal Portfolio</h2>
             </div>
         </div>
     </div>

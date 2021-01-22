@@ -83,3 +83,32 @@ a.text-secondary:focus, a.text-secondary:hover{
     padding: 0 2rem;
     font-size: 1.5rem;
 }
+/* PROJECTS */
+.pro.col-5{
+    margin-top: 6rem;
+    height: 75vh;
+    align-items: center!important;
+    justify-content: end;
+    padding-right: 2.38rem;
+    padding-left: 0rem;
+}
+.pro.img-fluid{
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 63% 100%, 0% 100%);
+}
+.c4-izmir{
+    clip-path: polygon(0 0, 100% 0, 63% 100%, 0% 100%)!important;
+}
+.c4-izmir figcaption{
+    clip-path: polygon(0 0, 100% 0, 63% 100%, 0% 100%)!important;
+}
+.c4-izmir figure{
+    clip-path: polygon(0 0, 100% 0, 63% 100%, 0% 100%)!important;
+}
+.pro-calendar{
+    margin-bottom: 1rem;
+}
+.pro-calendar.container{
+    padding: 1rem;
+    box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.5);
+}

@@ -50,3 +50,36 @@ a.text-secondary:focus, a.text-secondary:hover{
     padding-bottom: 3rem;
     text-justify: auto;
 }
+/* SKILLS */
+.main.navbar-brand.disabled{
+    filter: grayscale(1);
+}
+.main.nav-link.active{
+    color: #008fc7;
+}
+.grid.skills.col-5{
+    margin-top: 3rem;
+}
+.grid.skills.col-6{
+    height: auto;
+
+}
+.skills.text-white{
+    text-align: center;
+}
+.skills.col-4{
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.skills.img-fluid{
+    display: flex;
+    width: 7rem;
+    height: 7rem;
+    margin: auto;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+.skills.grid.paragraph{
+    padding: 0 2rem;
+    font-size: 1.5rem;
+}

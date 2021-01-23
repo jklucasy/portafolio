@@ -89,13 +89,12 @@ a.text-secondary:focus, a.text-secondary:hover{
     margin-top: 6rem;
     align-items: center!important;
     justify-content: end;
-    padding-right: 2.45rem;
+    padding-right: 0rem;
     padding-left: 0rem;
     transition: all .3s ease-in-out;
 }
 
 .calendar{
-    position: absolute;
     display: flex;
     opacity: 0;
     transition: all .3s ease-in-out;
@@ -103,7 +102,20 @@ a.text-secondary:focus, a.text-secondary:hover{
 .calendar.visible{
     opacity: 1;
 }
-
+.preview.btn{
+    padding: .5rem 2rem;
+}
+.preview.btn-primary{
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: none;
+    border-color: #ffffff;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.preview.btn-primary:hover{
+    background: rgba(0, 0, 0, 0.233);
+    border-color: #00000044;
+}
 .pro.img-fluid{
     width: 100%;
     clip-path: polygon(0 0, 100% 0, 62.95% 100%, 0% 100%);
@@ -160,14 +172,5 @@ a.text-secondary:focus, a.text-secondary:hover{
     transition: all .3s ease-in-out;
 }
 .pro-portfolio.container.activo{
-    opacity: 1;
-}
-.portfolio{
-    position: absolute;
-    display: flex;
-    opacity: 0;
-    transition: all .3s ease-in-out;
-}
-.portfolio.visible{
     opacity: 1;
 }

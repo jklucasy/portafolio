@@ -25,10 +25,16 @@
     </nav>
 
     <div class="pro grid container">
-        <div class="pro grid row offset-1 align-items-center">
-            <div class="pro col-5">
-                <figure class="c4-izmir c4-border-ccc-3 c4-image-blur c4-gradient-top-left" style="--primary-color: #000046; --secondary-color: #1CB5E0;">
+        <div class="pro grid row offset-1">
+            <div class="pro col-5"">
+                <figure id="img" class="calendar c4-izmir c4-border-ccc-3 c4-image-blur c4-gradient-top-left" style="--primary-color: #000046; --secondary-color: #1CB5E0;">
                     <img class="pro img-fluid" src="./img/holidays-calendar.png" alt="">
+                    <figcaption class="">
+                        <a class="btn btn-primary c4-reveal-down" href="">PREVIEW</a>
+                    </figcaption>
+                </figure>
+                <figure id="img2" class="portfolio c4-izmir c4-border-ccc-3 c4-image-blur c4-gradient-top-left" style="--primary-color: #000046; --secondary-color: #1CB5E0;">
+                    <img class="pro img-fluid" src="./img/portfolio.png" alt="">
                     <figcaption class="">
                         <a class="btn btn-primary c4-reveal-down" href="">PREVIEW</a>
                     </figcaption>
@@ -36,8 +42,8 @@
             </div>
             <div class="pro col-6">
                 <h1 class="grid title font-weight-bold display-4 animate__animated animate__fadeInLeft" >PROJECTS</h1>
-                <h2 class="pro-calendar animate__animated animate__fadeInLeft" >Holiday Calendar</h2>
-                <div class="pro-calendar container">
+                <h2 class="pro-calendar title animate__animated animate__fadeInLeft" id="calendar" >Holiday Calendar</h2>
+                <div class="pro-calendar container" id="items">
                     <div class="row">
                         <div class="skills col-3">
                             <img class="skills img-fluid" src="./img/html.png" alt="">
@@ -57,11 +63,32 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="pro-portfolio animate__animated animate__fadeInLeft" >Personal Portfolio</h2>
+                <h2 class="pro-portfolio title animate__animated animate__fadeInLeft" id="portfolio" >Personal Portfolio</h2>
+                <div class="pro-portfolio container" id="items2">
+                    <div class="row">
+                        <div class="skills col-3">
+                            <img class="skills img-fluid" src="./img/html.png" alt="">
+                            <p class="pro-text">HTML</p>
+                        </div>
+                        <div class="skills col-3">
+                            <img class="skills img-fluid" src="./img/css.png" alt="">
+                            <p class="pro-text">CSS</p>
+                        </div>
+                        <div class="skills col-3">
+                            <img class="skills img-fluid" src="./img/js.png" alt="">
+                            <p class="pro-text">JAVASCRIPT</p>
+                        </div>
+                        <div class="skills col-3">
+                            <img class="skills img-fluid" src="./img/bottstrap.png" alt="">
+                            <p class="pro-text">BOOTSTRAP</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

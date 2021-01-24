@@ -9,6 +9,40 @@ body{
     width: 50%;
     height: 100vh;
 }
+.fondo-i.dark{
+    width: 100%;
+    clip-path: polygon(0 0, 50% 0, 30% 100%, 0% 100%);
+    animation-name: verticalidad;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: normal ;
+}
+@keyframes verticalidad{
+    from{
+        clip-path: polygon(0 100%, 31% 100%, 31% 100%, 0% 100%);
+    }
+    to{
+        clip-path: polygon(0 0, 50% 0, 30% 100%, 0% 100%);
+    }
+}
+.fondo-i.black{
+    width: 100%;
+    animation-name: agrandar;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: normal ;
+    clip-path: polygon(0 0, 50% 0, 30% 100%, 0% 100%);
+}
+@keyframes agrandar{
+    from{
+        clip-path: polygon(0 0, 50% 0, 30% 100%, 0% 100%);
+    }
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
 a.text-secondary:focus, a.text-secondary:hover{
     color: #0092be!important;
 }
@@ -50,12 +84,32 @@ a.text-secondary:focus, a.text-secondary:hover{
     padding-bottom: 3rem;
     text-justify: auto;
 }
+.retrato{
+    width: 100%;
+    animation-name: efecto;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: normal ;
+}
+@keyframes efecto{
+    from{
+        clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+    }
+    to{
+        clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
+    }
+}
 /* SKILLS */
+.main.navbar-brand.disabled:hover{
+    filter: grayscale(0);
+}
 .main.navbar-brand.disabled{
     filter: grayscale(1);
+    transition: all .3s ease-in;
 }
-.main.nav-link.active{
-    color: #008fc7;
+.active{
+    color: #008fc7!important;
 }
 .grid.skills.col-5{
     margin-top: 3rem;
@@ -93,11 +147,11 @@ a.text-secondary:focus, a.text-secondary:hover{
     padding-left: 0rem;
     transition: all .3s ease-in-out;
 }
-
 .calendar{
     display: flex;
     opacity: 0;
     transition: all .3s ease-in-out;
+    z-index: 10;
 }
 .calendar.visible{
     opacity: 1;
@@ -173,4 +227,13 @@ a.text-secondary:focus, a.text-secondary:hover{
 }
 .pro-portfolio.container.activo{
     opacity: 1;
+}
+/* CONTACT */
+.contact-gris{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/contact.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
 }

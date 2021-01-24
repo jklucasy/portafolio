@@ -10,26 +10,36 @@
 </head>
 <body>
     <div class="fondo d-flex position-absolute">
-        <img class="fondo-i img-fluid animate__animated animate__slideInUp" src="./img/fondo-dark.png" alt="">
-        <img class="fondo-i img-fluid animate__animated animate__slideInDown" src="./img/fondo-white.png" alt="">
+        <img class="fondo-i black img-fluid animate__animated animate__slideInUp" src="./img/fondoBlack.png" alt="">
+        <!-- <img class="fondo-i white img-fluid animate__animated animate__slideInDown" src="./img/fondo-white.png" alt=""> -->
     </div>
     
     <nav class="main navbar bg-transparent border-bottom">
-        <a class="main navbar-brand" href="./index.html"><img class="align-items-center" src="./img/nav.png" alt="home"></a>
+        <a class="main navbar-brand disabled" href="./index.html"><img class="align-items-center" src="./img/nav.png" alt="home"></a>
         <ul class="main nav">
             <li class="main nav-item"><a href="./skills.html" class="main nav-link text-secondary font-weight-bold h2">SKILLS</a></li>
             <li class="main nav-item"><a href="./projects.html" class="main nav-link text-secondary font-weight-bold h2">PROJECTS</a></li>
-            <li class="main nav-item"><a href="./contact.html" class="main nav-link text-secondary font-weight-bold h2">CONTACT</a></li>
+            <li class="main nav-item active"><a href="./contact.html" class="main nav-link active text-secondary font-weight-bold h2">CONTACT</a></li>
         </ul>
     </nav>
 
-    <div class="grid container">
-        <div class="grid row offset-1 align-items-center">
-            <div class="grid col-4">
+    <div class="contact grid container">
+        <div class="contact grid row offset-1">
+            <div class="contact col-5"">
+                <div class="contact-gris img-fluid">
+                </div>
             </div>
-            <div class="grid offset-1 col-6">
-                <h1 class="grid title font-weight-bold display-4 animate__animated animate__fadeInLeft" >SKILLS</h1>
-                <p class="grid paragraph animate__animated animate__fadeInLeft" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia delectus, et odio quos officiis dicta ipsam sed qui odit, natus illum, rerum ratione Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio tempore alia voluptates minima magnam consequuntur incidunt deserunt excepturi.</p>
+            <div class="grid col-6">
+                <h1 class="grid title font-weight-bold display-4 animate__animated animate__fadeInLeft" >CONTACT</h1>
+                <p class="grid paragraph text-white animate__animated animate__fadeInLeft" >Lorem ipelit. Molliis dicta ipsam sed qui odit, natus illum, rerum ratione Lorem ipsum dolor consequuntur incidunt deserunt excepturi.</p>
+                <div class="red">
+                    <a href=""></a>
+                    <p class="text-white">WhatsApp</p>
+                </div>
+                <div class="red">
+                    <a href=""></a>
+                    <p class="text-white">Gmail</p>
+                </div>
             </div>
         </div>
     </div>

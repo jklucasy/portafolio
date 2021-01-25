@@ -84,6 +84,7 @@ a.text-secondary:focus, a.text-secondary:hover{
 .grid.paragraph{
     padding-bottom: 3rem;
     text-justify: auto;
+    font-size: 1.3rem;
 }
 .retrato{
     width: 100%;
@@ -148,6 +149,14 @@ a.text-secondary:focus, a.text-secondary:hover{
     padding-left: 0rem;
     transition: all .3s ease-in-out;
 }
+.proj.img-fluid{
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    margin: auto;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
 .calendar{
     display: flex;
     opacity: 0;
@@ -159,6 +168,9 @@ a.text-secondary:focus, a.text-secondary:hover{
 }
 .preview.btn{
     padding: .5rem 2rem;
+}
+.pro.parragraph{
+    font-size: 1.3rem;
 }
 .preview.btn-primary{
     font-size: 1.3rem;
@@ -197,6 +209,8 @@ a.text-secondary:focus, a.text-secondary:hover{
 }
 .pro-calendar.container{
     position: absolute;
+    display: flex;
+    justify-content: center;
     padding: 1rem;
     box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.5);
     display: flex;
@@ -213,13 +227,15 @@ a.text-secondary:focus, a.text-secondary:hover{
     transition: color .3s ease-in-out;
 }
 .pro-portfolio.title.position{
-    margin-top: 15rem;
+    margin-top: 12rem;
 }
 .pro-portfolio.title:hover{
     color: #008fc7;
 }
 .pro-portfolio.container{
     position: absolute;
+    display: flex;
+    justify-content: center;
     padding: 1rem;
     opacity: 0;
     box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.5);
@@ -238,6 +254,10 @@ a.text-secondary:focus, a.text-secondary:hover{
     background-repeat: no-repeat;
     filter: grayscale(1);
 }
+.red{
+    display: flex;
+    align-content: center;
+}
 .icon{
     display: flex;
     width: 5rem;
@@ -246,6 +266,8 @@ a.text-secondary:focus, a.text-secondary:hover{
     margin-bottom: 1rem;
 }
 .icon-text{
+    font-size: 1.2rem;
+    align-self: center;
     margin-left: 2rem;
     width: 5rem;
     text-align: center;

@@ -77,6 +77,7 @@ a.text-secondary:focus, a.text-secondary:hover{
 }
 .grid.title{
     color: #8000b3;
+    text-shadow: 1px 0px 1px #3b3b3b, 0px 1px 1px #969494, 2px 1px 1px #363636, 1px 2px 1px #8d8c8c, 3px 2px 1px #424242, 2px 3px 1px #949393, 4px 3px 1px #2e2e2e;
     padding-bottom: 3rem;
     text-align: center;
 }
@@ -236,4 +237,16 @@ a.text-secondary:focus, a.text-secondary:hover{
     background-size: cover;
     background-repeat: no-repeat;
     filter: grayscale(1);
+}
+.icon{
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.icon-text{
+    margin-left: 2rem;
+    width: 5rem;
+    text-align: center;
 }

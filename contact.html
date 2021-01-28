@@ -13,34 +13,49 @@
         <img class="fondo-i black img-fluid animate__animated animate__slideInUp" src="./img/fondoBlack.png" alt="">
     </div>
     
-    <nav class="main navbar bg-transparent border-bottom">
+    <nav class="main navbar navbar-expand-lg bg-transparent border-bottom">
         <a class="main navbar-brand disabled" href="./index.html"><img class="align-items-center" src="./img/nav.png" alt="home"></a>
-        <ul class="main nav">
+        <div class="navbar d-lg-none navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile" aria-controls="mobile" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <ul class="main nav position-absolute collapse flex-column justify-content-sm-center flex-lg-row d-lg-flex" id="mobile">
             <li class="main nav-item"><a href="./skills.html" class="main nav-link text-secondary font-weight-bold h2">SKILLS</a></li>
             <li class="main nav-item"><a href="./projects.html" class="main nav-link text-secondary font-weight-bold h2">PROJECTS</a></li>
-            <li class="main nav-item active"><a href="./contact.html" class="main nav-link active text-secondary font-weight-bold h2">CONTACT</a></li>
+            <li class="main nav-item"><a href="./contact.html" class="main nav-link text-secondary active font-weight-bold h2">CONTACT</a></li>
         </ul>
     </nav>
 
     <div class="contact grid container">
-        <div class="contact grid row offset-1">
-            <div class="contact col-5"">
-                <div class="contact-gris img-fluid">
+        <div class="contact grid row">
+            <div class="contact col-sm-12 col-lg-5"">
+                <div class="contact-gris d-md-flex">
                 </div>
+                <img class="contact img-fluid d-lg-none" src="./img/contact-gris.png" alt="">
             </div>
-            <div class="grid col-6">
+            <div class="contact grid col-sm-12 col-lg-6">
                 <h1 class="grid title font-weight-bold display-4 animate__animated animate__fadeInLeft" >CONTACT</h1>
                 <p class="grid paragraph text-white animate__animated animate__fadeInLeft" >
                     Contactame y trabajemos juntos.
                 </p>
-                <div class="red">
-                    <a class="icon"target="_blank" href="https://api.whatsapp.com/send?phone=51946485053"><img class="icon-w img-fluid" src="./img/whatsapp.png" alt=""></a>
-                    <p class="icon-text text-white">WhatsApp</p>
+                <div class="contact-redes d-sm-flex justify-content-sm-around d-lg-block">
+                    <div class="red">
+                        <a class="icon"target="_blank" href="https://api.whatsapp.com/send?phone=51946485053">
+                            <img class="icon-ico-sm" src="./img/whatsapp.png" alt="">
+                            <p class="icon-text text-white">WhatsApp</p>
+                        </a>
+                        
+                    </div>
+                    <div class="red">
+                        <a class="icon" href="mailto:jocelymelucas@gmail.com">
+                            <img class="icon-ico-sm" src="./img/gmail.png" alt="">
+                            <p class="icon-text text-white">Gmail</p>
+                        </a>
+                        
+                    </div>
                 </div>
-                <div class="red">
-                    <a class="icon" href="mailto:jocelymelucas@gmail.com"><img class="icon-g img-fluid" src="./img/gmail.png" alt=""></a>
-                    <p class="icon-text text-white">Gmail</p>
-                </div>
+                
             </div>
         </div>
     </div>

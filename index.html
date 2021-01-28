@@ -10,12 +10,18 @@
 </head>
 <body>
     <div class="fondo d-flex position-absolute">
-        <img class="fondo-i dark img-fluid" src="./img/fondoBlack.png" alt="">
+        <img class="fondo dark d-lg-none img-fluid" src="./img/fondoBlack.png" alt="">
+        <img class="fondo-i dark d-sm-none d-lg-block img-fluid" src="./img/fondoBlack.png" alt="">
     </div>
     
-    <nav class="main navbar bg-transparent border-bottom">
+    <nav class="main navbar navbar-expand-lg bg-transparent border-bottom">
         <a class="main navbar-brand" href="./index.html"><img class="align-items-center" src="./img/nav.png" alt="home"></a>
-        <ul class="main nav">
+        <div class="navbar d-lg-none navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile" aria-controls="mobile" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <ul class="main nav position-absolute collapse flex-column flex-lg-row d-lg-flex" id="mobile">
             <li class="main nav-item"><a href="./skills.html" class="main nav-link text-secondary font-weight-bold h2">SKILLS</a></li>
             <li class="main nav-item"><a href="./projects.html" class="main nav-link text-secondary font-weight-bold h2">PROJECTS</a></li>
             <li class="main nav-item"><a href="./contact.html" class="main nav-link text-secondary font-weight-bold h2">CONTACT</a></li>
@@ -23,8 +29,8 @@
     </nav>
 
     <div class="grid container">
-        <div class="grid row offset-1 align-items-center">
-            <div class="grid col-4">
+        <div class="grid row offset-sm-1 align-items-center">
+            <div class="grid col-sm-12 col-lg-4 offset-lg-1">
                 <h1 class="grid title font-weight-bold display-4 animate__animated animate__fadeInLeft" >ABOUT <span class="grid span text-white"> ME</span></h1>
                 <p class="grid paragraph text-white animate__animated animate__fadeInLeft" >
                     Hola, soy Jocelyme Lucas, actualmente resido en Perú .
@@ -33,7 +39,7 @@
                 </p>
                 <a class="grid btn btn-primary font-weight-bold animate__animated animate__fadeInLeft" href="">DOWNLOAD CV</a>
             </div>
-            <div class="grid offset-1 col-6">
+            <div class="grid col-sm-12 col-lg-6">
                 <img class="retrato img-fluid" src="./img/retrato.png" alt="">
             </div>
         </div>

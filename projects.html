@@ -11,21 +11,26 @@
 </head>
 <body>
     <div class="fondo d-flex position-absolute">
-        <img class="fondo-i dark img-fluid animate__animated animate__slideInUp" src="./img/fondoBlack.png" alt="">
+        <img class="fondo-i dark proj img-fluid animate__animated animate__slideInUp" src="./img/fondoBlack.png" alt="">
     </div>
     
-    <nav class="main navbar bg-transparent border-bottom">
+    <nav class="main navbar navbar-expand-lg bg-transparent border-bottom">
         <a class="main navbar-brand disabled" href="./index.html"><img class="align-items-center" src="./img/nav.png" alt="home"></a>
-        <ul class="main nav">
+        <div class="navbar d-lg-none navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile" aria-controls="mobile" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <ul class="main nav position-absolute collapse flex-column flex-lg-row d-lg-flex" id="mobile">
             <li class="main nav-item"><a href="./skills.html" class="main nav-link text-secondary font-weight-bold h2">SKILLS</a></li>
-            <li class="main nav-item"><a href="./projects.html" class="main nav-link active text-secondary font-weight-bold h2">PROJECTS</a></li>
+            <li class="main nav-item"><a href="./projects.html" class="main nav-link text-secondary active font-weight-bold h2">PROJECTS</a></li>
             <li class="main nav-item"><a href="./contact.html" class="main nav-link text-secondary font-weight-bold h2">CONTACT</a></li>
         </ul>
     </nav>
 
     <div class="pro grid container">
-        <div class="pro grid row offset-1">
-            <div class="pro col-5"">
+        <div class="pro grid row">
+            <div class="pro col-sm-12 col-lg-5 offset-lg-1">
                 <figure id="img" class="calendar visible c4-izmir c4-border-ccc-3 c4-image-blur c4-gradient-top-left" style="--primary-color: #000046; --secondary-color: #1CB5E0;">
                     <img id="cambio" class="pro img-fluid" src="./img/calendar.png" alt="">
                     
@@ -36,10 +41,10 @@
                 </figure>
                 
             </div>
-            <div class="pro col-6">
+            <div class="pro grid col-sm-12 col-lg-5 offset-lg-1">
                 <h1 class="grid title font-weight-bold display-4 animate__animated animate__fadeInLeft" >PROJECTS</h1>
                 <p class="pro parragraph animate__animated animate__fadeInLeft">
-                    Estos son parte de los proyectos que realizo para fortalecer mis conocimientos y habilidades.
+                    Parte de los proyectos que realizo para fortalecer mis conocimientos y habilidades.
                 </p>
                 <h2 class="pro-calendar title animate__animated animate__fadeInLeft" id="calendar" >Holiday Calendar</h2>
                 <div class="pro-calendar container activo" id="items">

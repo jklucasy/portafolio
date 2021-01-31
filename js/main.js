@@ -20,7 +20,7 @@ function mostrarCalendar() {
 }
 function mostrarPortfolio() {
     cambio.setAttribute("src", `./img/portfolio.png`);
-    // view.setAttribute("href", `https://jklucasy.github.io/`);
+    view.setAttribute("href", `https://jklucasy.github.io/portafolio/`);
     if (items2.classList.contains('activo')) {
             img.classList.remove('visible');
     } else {

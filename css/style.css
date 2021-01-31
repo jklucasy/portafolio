@@ -96,12 +96,14 @@ a.text-secondary:focus, a.text-secondary:hover{
     font-size: 1.3rem;
 }
 .retrato{
-    width: 100%;
     animation-name: efecto;
     animation-iteration-count: 1;
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-direction: normal ;
+}
+.retrato.img-fluid{
+    height: auto;
 }
 @keyframes efecto{
     from{
@@ -129,18 +131,26 @@ button.navbar-toggler{
 .main.navbar{
     position: relative;
     height: 6rem;
+    z-index: 100;
 }
 .main.navbar-brand{
     margin-left: 1rem;
+    z-index: 100;
+}
+.navbar.d-lg-none.navbar-dark{
+    z-index: 100;
 }
 .main.nav.position-absolute{
-    padding-top: 2rem;
-    z-index: 10000;
-    align-content: flex-end;
-    background: rgba(31, 31, 31, 0.719);
+    padding-top: 8rem;
+    background: rgba(22, 22, 22, 0.842);
     width: 100%;
     height: 100vh;
-    top: 6rem;
+    top: 0;
+    z-index: 10;
+    align-content: center;
+}
+.main.nav-item{
+    padding-bottom: 1rem;
 }
 @media (min-width: 57px) {
     .fondo-i.dark{
@@ -195,16 +205,20 @@ button.navbar-toggler{
         align-items: center!important;
         justify-content: end;
     }
-    .main.nav.flex-column{
-        width:max-content!important;
-        background: none;
-        z-index: 100;
-        left: 61%;
-        width: 50%;
-        top: 1rem;
+    .main.nav.position-absolute{
+        padding-top: 0rem;
+        background:none;
+        width: 100%;
+        height: auto;
+        top: auto;
+        z-index: 0;
+        justify-content: flex-end;
     }
     .grid.title{
         margin-top: 0;
+    }
+    .retrato.img-fluid{
+        height: 80vh;
     }
 }
 
@@ -214,10 +228,9 @@ button.navbar-toggler{
         margin-left: 6rem;
     }
     .grid.col-lg-6{
-        margin-left: 7rem;
-    }
-    .main.nav.flex-column{
-        left: 69%;
+        display: flex;
+        justify-content: center;
+        margin-left: 10rem;
     }
 }
 /* SKILLS */
@@ -283,15 +296,16 @@ button.navbar-toggler{
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .grid.skills.col-lg-6{
+        display: block;
+    }
+}
 /* PROJECTS */
 .fondo-i.dark.proj{
     width: 100%;
     height: 39rem;
     margin: 0;
-}
-.container{
-    width: 75vw;
 }
 .pro.col-sm-12{
     margin-top: 10rem;
@@ -352,6 +366,7 @@ button.navbar-toggler{
     color: #008fc7;
 }
 .pro-calendar.container{
+    width: 95%;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -378,6 +393,7 @@ button.navbar-toggler{
 }
 .pro-portfolio.container{
     position: absolute;
+    width: 95%;
     display: flex;
     justify-content: center;
     padding: 1rem;
@@ -451,6 +467,7 @@ button.navbar-toggler{
     }
     .c4-izmir{
         clip-path: polygon(0 0, 100% 0, 62.98% 100%, 0% 100%);
+    }
 }
 /* CONTACT */
 .contact.col-sm-12{
@@ -534,6 +551,8 @@ button.navbar-toggler{
     .contact.col-sm-12{
         height: 75vh!important;
     }
+    .contact.grid.col-lg-6{
+        display: block;
+        margin-left: 0;
+    }
 }
-
-/* // Extra large devices (large desktops, 1200px and up) */

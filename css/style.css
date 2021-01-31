@@ -472,10 +472,11 @@ button.navbar-toggler{
 /* CONTACT */
 .contact.col-sm-12{
     width: 100%;
-    height: 100vh!important;
-    margin-top: 4rem!important;
 }
-.contact-gris{
+.d-sm-none{
+    display: none;
+}
+div.contact-gris{
     width: 100%;
     height: 75vh!important;
     background-image: url('../img/contact.png')!important;

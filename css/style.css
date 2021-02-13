@@ -147,6 +147,7 @@ button.navbar-toggler{
     height: 100vh;
     top: 0;
     z-index: 10;
+    position: fixed!important;
     align-content: center;
 }
 .main.nav-item{

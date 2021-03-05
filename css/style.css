@@ -153,7 +153,7 @@ button.navbar-toggler{
 .main.nav-item{
     padding-bottom: 1rem;
 }
-@media (min-width: 57px) {
+@media (min-width: 576px) {
     .fondo-i.dark{
         display: none;
     }
@@ -172,6 +172,14 @@ button.navbar-toggler{
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .grid.paragraph{
+        padding-bottom: 0rem;
+        padding-right: 2rem;
+        font-size: 1rem;
+    }
+    .grid.btn.btn-primary{
+        font-size: 1.2rem
+    }
     a.text-secondary{
         color: #6c757d!important;
     }
@@ -193,6 +201,8 @@ button.navbar-toggler{
     }
     .grid.col-lg-4{
         margin-right: 10rem;
+        padding-right: 0px;
+        padding-left: 0px;
     }
     .offset-sm-1{
         margin-left: 2rem;
@@ -217,9 +227,10 @@ button.navbar-toggler{
     }
     .grid.title{
         margin-top: 0;
+        padding-bottom: 0rem;
     }
     .retrato.img-fluid{
-        height: 80vh;
+        height: 75vh;
     }
 }
 
@@ -232,6 +243,21 @@ button.navbar-toggler{
         display: flex;
         justify-content: center;
         margin-left: 10rem;
+    }
+    .grid.paragraph{
+        padding-bottom: 1.5rem;
+        padding-right: 2rem;
+        font-size: 1.3rem;
+    }
+    .grid.btn.btn-primary{
+        font-size: 1.2rem
+    }
+    .grid.title{
+        margin-top: 0;
+        padding-bottom: 1.5rem;
+    }
+    .retrato.img-fluid{
+        height: 80vh;
     }
 }
 /* SKILLS */
@@ -294,12 +320,34 @@ button.navbar-toggler{
     a.active{
         color: #008fc7!important;
     }
+    .skills.img-fluid{
+        display: flex;
+        width: 4rem;
+        height: 4rem;
+        margin: auto;
+        justify-self: center;
+        margin-bottom: 1rem;
+    }
+    .grid.skills.col-sm-12 {
+        height: 60vh;
+    }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .grid.skills.col-lg-6{
         display: block;
+    }
+    .skills.img-fluid{
+        display: flex;
+        width: 6rem;
+        height: 6rem;
+        margin: auto;
+        justify-self: center;
+        margin-bottom: 1rem;
+    }
+    .grid.skills.col-sm-12 {
+        height: 75vh;
     }
 }
 /* PROJECTS */
@@ -430,6 +478,7 @@ button.navbar-toggler{
         height: 100vh;
     }
     .pro.img-fluid{
+        
         width: 100%;
         clip-path: polygon(0 0, 100% 0, 69% 100%, 0% 100%);
     }
@@ -445,19 +494,53 @@ button.navbar-toggler{
     .container{
         width: auto;
     }
-    .pro.col-lg-5{
-        margin-left: 5rem;
+    .pro.col-lg-5:nth-last-child(){
+        margin-left: 0rem;
     }
     .pro-portfolio.container.activo{
         opacity: 1;
         margin-bottom: 0;
     }
     .pro.col-sm-12{
-        margin-top: 6rem!important;
+        margin-top: 3rem!important;
     }
     .pro.col-sm-12:nth-child(2){
-        margin-top: 1rem!important;
+        margin-top: .2rem!important;
     }
+    .pro-portfolio.title.position {
+        margin-top: 9rem;
+    }
+    .marcero {
+        margin-top: 0rem!important;
+        padding-bottom: 0rem!important;
+    }
+    .skills.col-3 img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .pro-grid.col-lg-5 p {
+        margin-bottom: 0!important;
+        margin-block-start: 0em;
+        margin: 0;
+        margin-block-end: 0em;
+    }
+    .pro-portfolio.container{
+        top: 62%;
+        z-index: -1;
+    }
+    .pro-calendar.title{
+        margin: 0;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-bottom: .3rem!important;
+    }
+    .pro-portfolio.title{
+        margin: 0;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-bottom: .3rem!important;
+    }
+
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
@@ -468,6 +551,23 @@ button.navbar-toggler{
     }
     .c4-izmir{
         clip-path: polygon(0 0, 100% 0, 62.98% 100%, 0% 100%);
+    }
+    .pro-portfolio.title.position {
+        margin-top: 9rem;
+    }
+    .marcero {
+        margin-top: 0rem!important;
+        padding-bottom: 0rem!important;
+    }
+    .pro.col-lg-5{
+        margin-left: 3.5rem;
+    }
+    .pro.col-sm-12{
+        margin-top: 4rem!important;
+    }
+    .pro-portfolio.container{
+        top: 50%;
+        z-index: -1;
     }
 }
 /* CONTACT */
@@ -498,12 +598,13 @@ div.contact-gris{
 .icon{
     display: flex;
     width: 5rem;
-    height: 5rem;
+    height: 3rem;
     margin-left: 2rem;
     margin-bottom: 1rem;
 }
 .icon-ico-sm{
-    width: 5rem!important;
+    width: 3rem!important;
+    height: 3rem!important;
 }
 .icon-text{
     font-size: 1.2rem;

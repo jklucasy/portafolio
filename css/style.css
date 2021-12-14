@@ -1,6 +1,9 @@
 body{
     height: 100%;
 }
+.skills img{
+    object-fit: contain;
+}
 .fondo{
     width: 100%;
     flex-wrap: nowrap;
@@ -130,7 +133,7 @@ button.navbar-toggler{
 }
 .main.navbar{
     position: relative;
-    height: 6rem;
+    height: 4rem;
     z-index: 100;
 }
 .main.navbar-brand{
@@ -263,7 +266,7 @@ button.navbar-toggler{
 /* SKILLS */
 .fondo-i.dark.skills{
     width: 100%;
-    height: 95rem;
+    height: 65rem;
 }
 .main.navbar-brand.disabled:hover{
     filter: grayscale(0);
@@ -351,6 +354,31 @@ button.navbar-toggler{
     }
 }
 /* PROJECTS */
+.preview-relative{
+    position: relative;
+}
+.preview-absolute{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 90%;
+    left:0;
+}
+.projects-default{
+    display: flex;
+    justify-content: center;
+    
+}
+.box-container{
+    padding: 1rem;
+}
+.reset-state{
+    padding-right: 0!important;
+    padding-left: 0!important;
+    margin-right: 0!important;
+    margin-left: 0!important;
+}
+
 .fondo-i.dark.proj{
     width: 100%;
     height: 39rem;
@@ -360,6 +388,7 @@ button.navbar-toggler{
     margin-top: 10rem;
 }
 .proj.img-fluid{
+    
     display: flex;
     width: 4rem;
     height: 4rem;
@@ -367,14 +396,15 @@ button.navbar-toggler{
     justify-self: center;
     margin-bottom: 1rem;
 }
+.img-icon{
+    object-fit: contain!important;
+    width: max-content!important;
+}
 .calendar{
     display: flex;
     opacity: 0;
     transition: all .3s ease-in-out;
     z-index: 10;
-}
-.calendar.visible{
-    opacity: 1;
 }
 .preview.btn{
     padding: .5rem 2rem;
@@ -395,65 +425,22 @@ button.navbar-toggler{
 }
 .pro.img-fluid{
     width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 72%, 0% 100%);
 }
 .c4-izmir{
-    clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 72%, 0% 100%);
 }
 .c4-izmir figcaption{
-    clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0%, 100% 72%, 0% 100%);
 }
 .c4-izmir figure{
-    clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0%, 100% 72%, 0% 100%);
 }
 .pro-calendar.title{
     margin-bottom: 1rem;
-    cursor: pointer;
-    transition: color .3s ease-in-out;
-}
-.pro-calendar.title:hover{
     color: #008fc7;
-}
-.pro-calendar.container{
-    width: 95%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.5);
-    display: flex;
-    opacity: 0;
-    transition: all .3s ease-in-out;
-}
-.pro-calendar.container.activo{
-    opacity: 1;
-}
-.pro-portfolio.title{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
-    transition: color .3s ease-in-out;
-}
-.pro-portfolio.title.position{
-    margin-top: 12rem;
-}
-.pro-portfolio.title:hover{
-    color: #008fc7;
-}
-.pro-portfolio.container{
-    position: absolute;
-    width: 95%;
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    opacity: 0;
-    box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.5);
-    display: flex;
-    transition: all .3s ease-in-out;
-}
-.pro-portfolio.container.activo{
-    opacity: 1;
-    margin-bottom: 10rem;
 }
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -474,22 +461,27 @@ button.navbar-toggler{
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .fondo-i.dark.proj{
-        height: 100vh;
+    .preview-absolute{
+        width: 50%;
+        height: 100%;
+        top: 46%;
+        right: 3rem;
     }
     .pro.img-fluid{
-        
-        width: 100%;
-        clip-path: polygon(0 0, 100% 0, 69% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 83% 100%, 0% 100%);
     }
     .c4-izmir{
-        clip-path: polygon(0 0, 100% 0, 69% 100%, 0% 100%);
+        
+        clip-path: polygon(0 0, 100% 0, 83% 100%, 0% 100%);
     }
     .c4-izmir figcaption{
-        clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%)!important;
+        clip-path: polygon(0 0, 100% 0, 83% 100%, 0% 100%);
     }
     .c4-izmir figure{
-        clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%)!important;
+        clip-path: polygon(0 0, 100% 0, 83% 100%, 0% 100%);
+    }
+    .fondo-i.dark.proj{
+        height: 100vh;
     }
     .container{
         width: auto;
@@ -497,18 +489,11 @@ button.navbar-toggler{
     .pro.col-lg-5:nth-last-child(){
         margin-left: 0rem;
     }
-    .pro-portfolio.container.activo{
-        opacity: 1;
-        margin-bottom: 0;
-    }
     .pro.col-sm-12{
         margin-top: 3rem!important;
     }
     .pro.col-sm-12:nth-child(2){
         margin-top: .2rem!important;
-    }
-    .pro-portfolio.title.position {
-        margin-top: 9rem;
     }
     .marcero {
         margin-top: 0rem!important;
@@ -524,17 +509,7 @@ button.navbar-toggler{
         margin: 0;
         margin-block-end: 0em;
     }
-    .pro-portfolio.container{
-        top: 62%;
-        z-index: -1;
-    }
     .pro-calendar.title{
-        margin: 0;
-        margin-block-start: 0em;
-        margin-block-end: 0em;
-        margin-bottom: .3rem!important;
-    }
-    .pro-portfolio.title{
         margin: 0;
         margin-block-start: 0em;
         margin-block-end: 0em;
@@ -545,16 +520,6 @@ button.navbar-toggler{
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .pro.img-fluid{
-        width: 100%;
-        clip-path: polygon(0 0, 100% 0, 62.98% 100%, 0% 100%);
-    }
-    .c4-izmir{
-        clip-path: polygon(0 0, 100% 0, 62.98% 100%, 0% 100%);
-    }
-    .pro-portfolio.title.position {
-        margin-top: 9rem;
-    }
     .marcero {
         margin-top: 0rem!important;
         padding-bottom: 0rem!important;
@@ -564,10 +529,6 @@ button.navbar-toggler{
     }
     .pro.col-sm-12{
         margin-top: 4rem!important;
-    }
-    .pro-portfolio.container{
-        top: 50%;
-        z-index: -1;
     }
 }
 /* CONTACT */
@@ -626,6 +587,9 @@ div.contact-gris{
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .pro.img-fluid{
+        height: 100%;
+    }
     .fondo-i{
         width: 50%;
         height: 100vh!important;
@@ -657,5 +621,50 @@ div.contact-gris{
     .contact.grid.col-lg-6{
         display: block;
         margin-left: 0;
+    }
+}
+/* SWIPER JS */
+.swiper {
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    max-height: max-content;
+}
+
+.swiper-slide {
+    text-align: end;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide  {
+    background: transparent;
+    padding-top: 1rem;
+}
+.swiper-slide img {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+@media (min-width: 992px) {
+    .swiper,
+    .swiper-slide {
+    min-height: 100%;
+    max-height: 70vh;
+    margin-top: 1rem;
     }
 }
